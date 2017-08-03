@@ -1,28 +1,25 @@
-# Deploy
+Deployment
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.5.
+Angular 2 Deployment in Github Pages
 
-## Development server
+Testing Deployment of Angular2 Webpack in ghpages
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+First get all relevant the files from the Dist Folder of your application
 
-## Code scaffolding
+for me it was the css files in the assets folder main.bundle.js polyfills.bundle.js vendor.bundle.js
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+Then push this files in the repo which you have created.
 
-## Build
+1 -- If you want the application to run on the root directory - create a special repo with the name [yourgithubusername].github.io and opush these files in the master branch
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+2 -- Where as if you want to create these page in the sub directory of in a different brach other than than the root , create a branch gh-pages and push these files in that branch.
 
-## Running unit tests
+In both the cases the way we access these deployed pages will be different .
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+For the First Case it will be https://[yourgithubusername].github.io and for the second case it will be [yourgithubusername].github.io/[Repo name].
 
-## Running end-to-end tests
+If Suppose you want to deploy it using the sefcond case make sure to change the base url pf the index.html file in the dist as all the route mappings depend on the path you give and it should be set to [/branchname].
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+Link to this page
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+https://rahulrsingh09.github.io/TestingSPA
